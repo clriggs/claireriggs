@@ -273,6 +273,7 @@ a {
     
     body {
         min-width: 320px;
+        background:  #c06bd1;
     }
     
     body, input, select, textarea {
@@ -282,6 +283,7 @@ a {
     #bg {
         background-size: 300px auto;
         width: 900px;
+        background: #c06bd1;
     }
     
     /* Header */
@@ -305,6 +307,11 @@ a {
     #header nav a:active {
         font-size: 1em;
     }
+    #overlay {
+        none;
+        opacity: 0;
+        background-image: none;
+    }
     
 }
 
@@ -312,8 +319,9 @@ a {
 
     @media screen and (max-width: 480px) {
         #bg {
-                    background-size: 412.5px auto;
+                    background-size: 300px auto;
                     width: 480px;
+                    background: #c06bd1;
                 }
 
             /* Header */
@@ -324,6 +332,12 @@ a {
                 
                 #overlay {
                     none;
+                    opacity: 0;
+                    background-image: none;
+                }
+                
+                #body {
+                    background: #c06bd1;
                 }
     }
     
