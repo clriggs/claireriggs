@@ -91,25 +91,6 @@ body {
     overflow: scroll;
 }
 
-img {
-    max-width: 600;
-    min-width: 300px;
-    height: auto;
-/*    object-fit: scale-down;*/
-}
-
-img.gradient_fig {
-    max-width: 300px;
-    min-width: 150px;
-    object-fit: scale-down;
-}
-
-img.kitties {
-    max-width: 60%;
-    min-width: 300px;
-    height: auto;
-}
-
 a {
     border-bottom: dotted 1px;
     color: inherit;
