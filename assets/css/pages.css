@@ -91,6 +91,14 @@ body {
     overflow: scroll;
 }
 
+img {
+    width: 600px
+}
+
+img.gradient_fig{
+    width: 300px
+}
+
 a {
     border-bottom: dotted 1px;
     color: inherit;
@@ -313,6 +321,14 @@ a {
         background-image: none;
     }
     
+    img{
+        width: 300px;
+    }
+    
+    img.gradient_fig{
+        width: 150px
+    }
+    
 }
 
 /* Mobile (Portrait) */
@@ -338,6 +354,14 @@ a {
             
             #body {
                 background: #c06bd1;
+            }
+            
+            img{
+                width: 300px;
+            }
+            
+            img.gradient_fig{
+                width: 150px
             }
 }
 
