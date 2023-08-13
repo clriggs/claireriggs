@@ -314,7 +314,7 @@ a {
         #bg {
                     background-size: 412.5px auto;
                     width: 1237.5px;
-                    background:
+                    background: #c06bd1
                 }
 
             /* Header */
@@ -324,8 +324,7 @@ a {
                 }
                 
                 #overlay {
-                    opacity: 0;
-                    
+                    none;
                 }
     }
     
