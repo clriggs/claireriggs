@@ -313,8 +313,7 @@ a {
     @media screen and (max-width: 480px) {
         #bg {
                     background-size: 412.5px auto;
-                    width: 1237.5px;
-                    background: #c06bd1
+                    width: 480px;
                 }
 
             /* Header */
