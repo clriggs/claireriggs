@@ -91,6 +91,25 @@ body {
     overflow: scroll;
 }
 
+img {
+    max-width: 600;
+    min-width: 300px;
+    height: auto;
+/*    object-fit: scale-down;*/
+}
+
+img.gradient_fig {
+    max-width: 300px;
+    min-width: 150px;
+    object-fit: scale-down;
+}
+
+img.kitties {
+    max-width: 60%;
+    min-width: 300px;
+    height: auto;
+}
+
 a {
     border-bottom: dotted 1px;
     color: inherit;
@@ -317,28 +336,28 @@ a {
 
 /* Mobile (Portrait) */
 
-    @media screen and (max-width: 480px) {
-        #bg {
-                    background-size: 300px auto;
-                    width: 480px;
-                    background: #c06bd1;
-                }
+@media screen and (max-width: 480px) {
+    #bg {
+                background-size: 300px auto;
+                width: 480px;
+                background: #c06bd1;
+            }
 
-            /* Header */
+        /* Header */
 
-                #header nav {
-                    padding: 0.1em;
-                }
-                
-                #overlay {
-                    none;
-                    opacity: 0;
-                    background-image: none;
-                }
-                
-                #body {
-                    background: #c06bd1;
-                }
-    }
-    
+            #header nav {
+                padding: 0.1em;
+            }
+            
+            #overlay {
+                none;
+                opacity: 0;
+                background-image: none;
+            }
+            
+            #body {
+                background: #c06bd1;
+            }
+}
+
     
