@@ -33,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
 
 /* Navbar */
 
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
 
 @media (max-width: 600px) {
   .navbar a {
