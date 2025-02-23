@@ -33,7 +33,7 @@
                         <h1>Research</h1>
                         <p>I’m currently a Ph.D. candidate at Rutgers, and my advisor is Alyson Brooks. I’m also a member of the <a href="https://nbody.shop">N-body shop</a> collaboration. My research interests include dwarf galaxies, cosmological simulations, star formation, and more recently, machine learning. </p>
                         <h2>Simulations</h2>
-                        <p>I most closely work with the simulations from the <a href="https://nbody.shop">N-body shop</a>, particularly the MARVEL-ous dwarfs and the DC Justice League. These simulations feature a combined total of 200+ dwarfs, with a wide variety of masses and both field and satellite environments. See a visualization below of Sandra, one of our DCJL simulations.</p>
+                        <p>I use the simulations from the <a href="https://nbody.shop">N-body shop</a>, particularly the MARVEL-ous dwarfs and the DC Justice League. These simulations feature a combined total of 200+ dwarfs, with a wide variety of masses and both field and satellite environments. See a visualization below of Sandra, one of our DCJL simulations.</p>
                         <figure>
                             <video width="600" controls>
                               <source src="assets/css/images/sandra.pyramid_title_last.mp4" type="video/mp4">
@@ -43,8 +43,20 @@
                                 Here we show Sanda, one of the mint DCJL simulations. The center galaxy is Milky Way-like, and is surrounded by smaller dwarfs. The top panel shows the dark matter, the bottom left panel shows gas colored by density, and the bottom right shows stars (pink) and gas temperature (blue=cold, red=hot). Time since the Big Bang is shown.
                             <a href="https://youtu.be/ZjCyP2PrqkQ">Video source</a>
                             </figcaption>
-                       <h2>Age Gradients of Dwarf Galaxies</h2>
-                       <p>Observations of dwarf stellar age gradients reveal that they tend to have younger stars closer to the center of the galaxy and older stars closer to the outskirts, and this trend is found across many different types of dwarfs. Furthermore, Milky-Way (MW) type galaxies show the opposite gradient, with the oldest stars near the center and younger stars on the outskirts. The formation of MW-like gradients is well understood theoretically, while the formation of dwarf gradients is less understood. To investigate the origin of dwarf stellar age gradients, I use the large, varied sample of the Marvel and DCJL simulation suites. </p>
+                       
+                       <h2>Star Formation</h2>
+                       <p>I’m currently updating the ChaNGa code to include more accurate models of star formation.  The general picture of star formation is that stars form from interstellar gas when the force of gravity overcomes the gas pressure, and observationally this is shown to occur in small, dense structures called molecular clouds. However, other factors, including the chemical composition of the gas, turbulence, and magnetic fields can affect star formation (thus increasing the complexity of the problem). Currently, ChaNGa turns gas into stars via temperature and density criteria (once the temperature is low enough and the density is high enough, stars can form). However, real gas is turbulent, and kinetic energy from this motion can prevent the collapse of cold, dense gas. I am therefore implementing a virial parameter in the code in order to increase the accuracy of the star formation scheme. </p>
+                    
+                        <nav>
+                            <ul>
+                                <li><a href="https://orcid.org/0000-0001-8894-5671" class="icon brands fa-orcid"><span class="label">ORCiD</span></a></li>
+                                <li><a href="https://github.com/clriggs" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                                <li><a href="mailto:riggs@physics.rutgers.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                            </ul>
+                        </nav>
+
+                        <h2>Age Gradients of Dwarf Galaxies</h2>
+                       <p>Please see my <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...977...20R/abstract">2024 paper on dwarf galaxy age gradients</a>. Observations of dwarf stellar age gradients reveal that they tend to have younger stars closer to the center of the galaxy and older stars closer to the outskirts, and this trend is found across many different types of dwarfs. Furthermore, Milky-Way (MW) type galaxies show the opposite gradient, with the oldest stars near the center and younger stars on the outskirts. The formation of MW-like gradients is well understood theoretically, while the formation of dwarf gradients is less understood. To investigate the origin of dwarf stellar age gradients, I use the large, varied sample of the Marvel and DCJL simulation suites. </p>
                        <figure>
 <!--                           <img width="300" src="assets/css/images/gradient_1.png" alt=", for a galaxy with a stellar mass of 1.83 x10^6 solar masses. THe plot is colored by stellar age in Gyr. This is a slightly negative, but mostly flat gradient, since most of the stars across the galaxy are old">-->
                            <img class="gradient_fig" width="300" src="assets/css/images/gradient_steep.png" alt="A plot that shows galaxy radius on the x-axis in kpc and age percentile on the y-axis. Stars are binned by their age, and a colorbar ranging from red (old) to blue (young) depicts the age in Gyr. The stellar mass of the galaxy whose age gradient is depicted here is 7.87e8 solar masses. In this galaxy, we see that most of the young stars are at the center of this galaxy, with older stars on the outskirts.">
@@ -58,18 +70,7 @@
                                    Each dot on this graph represents a galaxy in our sample, with circles representing field dwarfs and stars representing satellite dwarfs. The x-axis shows t<sub>90</sub> in Gyrs, which is the time when 90% of the stars in the galaxy formed, and the y-axis shows the age gradient of the galaxy. Each galaxy is colored by its stellar mass. Overall, we see that there's an overall U-shaped trend, with the lowest mass dwarfs tend to have a flatter age gradient, and also stopped forming stars very early. For the rest of the galaxies, there seems to be a trend between t<sub>90</sub> and age gradient, with more recent t<sub>90</sub> corresponding to a flatter age gradient.
                                </figcaption>
                        </figure>
-                       <h2>Star Formation</h2>
-                       <p>I’m also currently embarking on a project involving updating the ChaNGa code to include more accurate models of star formation.  The general picture of star formation is that stars form from interstellar gas when the force of gravity overcomes the gas pressure, and observationally this is shown to occur in small, dense structures called molecular clouds. However, other factors, including the chemical composition of the gas, turbulence, and magnetic fields can affect star formation (and thus increasing the complexity of the problem). Currently, ChaNGa turns gas into stars via temperature and density criteria (once the temperature is low enough and the density is high enough, stars can form). However, real gas is turbulent, and kinetic energy from this motion can prevent the collapse of cold, dense gas. Thus, I plan on implementing a virial parameter in the code in order to increase the accuracy of the star formation scheme. </p>
-                    
-                        <nav>
-                            <ul>
-                                <li><a href="https://orcid.org/0000-0001-8894-5671" class="icon brands fa-orcid"><span class="label">ORCiD</span></a></li>
-                                <li><a href="https://github.com/clriggs" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                                <li><a href="mailto:riggs@physics.rutgers.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                            </ul>
-                        </nav>
                     </header>
-
                 <!-- Footer -->
                     <footer id="footer">
                         <span class="copyright">&copy; Claire Riggs 2023. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
